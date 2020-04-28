@@ -1,0 +1,50 @@
+C:/Users/aman/Workspace/240-project/Popcount.v {1 {vlog -work work -stats=none C:/Users/aman/Workspace/240-project/Popcount.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Popcount
+
+Top level modules:
+	Popcount
+
+} {} {}} C:/Users/aman/Workspace/240-project/Rotl.v {1 {vlog -work work -stats=none C:/Users/aman/Workspace/240-project/Rotl.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Rotl
+
+Top level modules:
+	Rotl
+
+} {} {}} C:/Users/aman/Workspace/240-project/Parity.v {1 {vlog -work work -stats=none C:/Users/aman/Workspace/240-project/Parity.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Parity
+
+Top level modules:
+	Parity
+
+} {} {}} C:/Users/aman/Workspace/240-project/Alu.v {1 {vlog -work work -stats=none C:/Users/aman/Workspace/240-project/Alu.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Alu
+
+Top level modules:
+	Alu
+
+} {} {}} C:/Users/aman/Workspace/240-project/Alu_tb.v {1 {vlog -work work -stats=none C:/Users/aman/Workspace/240-project/Alu_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Alu_tb
+
+Top level modules:
+	Alu_tb
+
+} {} {}} C:/Users/aman/Workspace/240-project/Rotr.v {1 {vlog -work work -stats=none C:/Users/aman/Workspace/240-project/Rotr.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Rotr
+
+Top level modules:
+	Rotr
+
+} {} {}} C:/Users/aman/Workspace/240-project/Popcount_32bit.v {1 {vlog -work work -stats=none C:/Users/aman/Workspace/240-project/Popcount_32bit.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Popcount_32bit
+
+Top level modules:
+	Popcount_32bit
+
+} {} {}}

@@ -1,0 +1,208 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/aman/Workspace/Verilog/Risc_BMI_ALU
+vAlu
+Z0 !s110 1588060569
+!i10b 1
+!s100 A@FL=9m_3OIldhT=CHka93
+IJz]2=N>`V>1nd6UDkR<QX1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/aman/Workspace/240-project
+w1588060264
+8C:/Users/aman/Workspace/240-project/Alu.v
+FC:/Users/aman/Workspace/240-project/Alu.v
+L0 6
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z4 !s108 1588060569.000000
+!s107 C:/Users/aman/Workspace/240-project/Alu.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/aman/Workspace/240-project/Alu.v|
+!s101 -O0
+!i113 1
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@alu
+vAlu_tb
+R0
+!i10b 1
+!s100 liPS>6DB6@C@NKZc5YZ6[3
+Ihd_@jh08h[A?iA^lQ:JXT0
+R1
+R2
+w1588060434
+Z6 8C:/Users/aman/Workspace/240-project/Alu_tb.v
+Z7 FC:/Users/aman/Workspace/240-project/Alu_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+Z8 !s107 C:/Users/aman/Workspace/240-project/Alu_tb.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/aman/Workspace/240-project/Alu_tb.v|
+!s101 -O0
+!i113 1
+R5
+n@alu_tb
+vAlu_testbench
+!s110 1588060266
+!i10b 1
+!s100 :_j2YB6:dEcLJCZP40B2c1
+IgaEA=Q1<chgQ?dDIANZOz3
+R1
+R2
+w1588059684
+R6
+R7
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1588060266.000000
+R8
+R9
+!s101 -O0
+!i113 1
+R5
+n@alu_testbench
+vParity
+R0
+!i10b 1
+!s100 DoBKGCo>TVA2Q9<60oFEd1
+IYJ6GbRYHRM`lzEgF]@JcK3
+R1
+R2
+w1588059968
+8C:/Users/aman/Workspace/240-project/Parity.v
+FC:/Users/aman/Workspace/240-project/Parity.v
+L0 7
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/aman/Workspace/240-project/Parity.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/aman/Workspace/240-project/Parity.v|
+!s101 -O0
+!i113 1
+R5
+n@parity
+vParity_8bit
+R0
+!i10b 1
+!s100 3fj:R3B[gg3CmiZ1SoE:22
+IkmT:>67Yd2A;ER@Qk@H4N0
+R1
+R2
+w1588060562
+8C:/Users/aman/Workspace/240-project/Parity_8bit.v
+FC:/Users/aman/Workspace/240-project/Parity_8bit.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/aman/Workspace/240-project/Parity_8bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/aman/Workspace/240-project/Parity_8bit.v|
+!s101 -O0
+!i113 1
+R5
+n@parity_8bit
+vPopcount
+R0
+!i10b 1
+!s100 GleZhoj@02^HGDdDE^DEa2
+IOTVk3eA@il7d;[M7XQ[`O2
+R1
+R2
+w1588060036
+8C:/Users/aman/Workspace/240-project/Popcount.v
+FC:/Users/aman/Workspace/240-project/Popcount.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/aman/Workspace/240-project/Popcount.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/aman/Workspace/240-project/Popcount.v|
+!s101 -O0
+!i113 1
+R5
+n@popcount
+vPopcount_32bit
+R0
+!i10b 1
+!s100 K`Ni^Mz<lzn2>lmP]ohWR1
+If9@6B:PKbhYYK5F;Qcz0n2
+R1
+R2
+w1588060566
+8C:/Users/aman/Workspace/240-project/Popcount_32bit.v
+FC:/Users/aman/Workspace/240-project/Popcount_32bit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/aman/Workspace/240-project/Popcount_32bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/aman/Workspace/240-project/Popcount_32bit.v|
+!s101 -O0
+!i113 1
+R5
+n@popcount_32bit
+vRotl
+Z10 !s110 1588060570
+!i10b 1
+!s100 R?ZdSRnU^J?IJnZWJDjOA0
+IH;ab9_;;HORgaTQB347T@2
+R1
+R2
+w1588060126
+8C:/Users/aman/Workspace/240-project/Rotl.v
+FC:/Users/aman/Workspace/240-project/Rotl.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/aman/Workspace/240-project/Rotl.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/aman/Workspace/240-project/Rotl.v|
+!s101 -O0
+!i113 1
+R5
+n@rotl
+vRotr
+R10
+!i10b 1
+!s100 ;Oci7c@g8Eni7:I<F>_Cb0
+Ik>gZ=fV<UNM_5M>khfP>40
+R1
+R2
+w1588060220
+8C:/Users/aman/Workspace/240-project/Rotr.v
+FC:/Users/aman/Workspace/240-project/Rotr.v
+L0 4
+R3
+r1
+!s85 0
+31
+!s108 1588060570.000000
+!s107 C:/Users/aman/Workspace/240-project/Rotr.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/aman/Workspace/240-project/Rotr.v|
+!s101 -O0
+!i113 1
+R5
+n@rotr
