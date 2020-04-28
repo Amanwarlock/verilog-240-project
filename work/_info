@@ -9,13 +9,13 @@ z2
 cModel Technology
 dC:/Users/aman/Workspace/Verilog/Risc_BMI_ALU
 vAlu
-Z0 !s110 1588060569
+Z0 !s110 1588065472
 !i10b 1
-!s100 A@FL=9m_3OIldhT=CHka93
-IJz]2=N>`V>1nd6UDkR<QX1
+!s100 ;7El2_]N>Df]7o11A`ech3
+I[KM9;QYkXijl5[RS?O:c72
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 Z2 dC:/Users/aman/Workspace/240-project
-w1588060264
+w1588065456
 8C:/Users/aman/Workspace/240-project/Alu.v
 FC:/Users/aman/Workspace/240-project/Alu.v
 L0 6
@@ -23,7 +23,7 @@ Z3 OP;L;10.4a;61
 r1
 !s85 0
 31
-Z4 !s108 1588060569.000000
+Z4 !s108 1588065472.000000
 !s107 C:/Users/aman/Workspace/240-project/Alu.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/aman/Workspace/240-project/Alu.v|
 !s101 -O0
@@ -33,11 +33,11 @@ n@alu
 vAlu_tb
 R0
 !i10b 1
-!s100 liPS>6DB6@C@NKZc5YZ6[3
-Ihd_@jh08h[A?iA^lQ:JXT0
+!s100 zLGe@OhBK_S1mMSmX<fOe0
+IDFa`Rcnc_[;65NQ8`?zQN0
 R1
 R2
-w1588060434
+w1588065470
 Z6 8C:/Users/aman/Workspace/240-project/Alu_tb.v
 Z7 FC:/Users/aman/Workspace/240-project/Alu_tb.v
 L0 3
@@ -74,8 +74,30 @@ R9
 !i113 1
 R5
 n@alu_testbench
+vBitreverse
+Z10 !s110 1588065473
+!i10b 1
+!s100 X`g0UcKegQ^c?naV=<H^I1
+IjH^z>KZe11e7TbcO6d9R:2
+R1
+R2
+w1588065462
+8C:/Users/aman/Workspace/240-project/Bitreverse.v
+FC:/Users/aman/Workspace/240-project/Bitreverse.v
+L0 3
+R3
+r1
+!s85 0
+31
+Z11 !s108 1588065473.000000
+!s107 C:/Users/aman/Workspace/240-project/Bitreverse.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/aman/Workspace/240-project/Bitreverse.v|
+!s101 -O0
+!i113 1
+R5
+n@bitreverse
 vParity
-R0
+R10
 !i10b 1
 !s100 DoBKGCo>TVA2Q9<60oFEd1
 IYJ6GbRYHRM`lzEgF]@JcK3
@@ -89,7 +111,7 @@ R3
 r1
 !s85 0
 31
-R4
+R11
 !s107 C:/Users/aman/Workspace/240-project/Parity.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/aman/Workspace/240-project/Parity.v|
 !s101 -O0
@@ -97,7 +119,7 @@ R4
 R5
 n@parity
 vParity_8bit
-R0
+R10
 !i10b 1
 !s100 3fj:R3B[gg3CmiZ1SoE:22
 IkmT:>67Yd2A;ER@Qk@H4N0
@@ -119,7 +141,7 @@ R4
 R5
 n@parity_8bit
 vPopcount
-R0
+R10
 !i10b 1
 !s100 GleZhoj@02^HGDdDE^DEa2
 IOTVk3eA@il7d;[M7XQ[`O2
@@ -133,7 +155,7 @@ R3
 r1
 !s85 0
 31
-R4
+R11
 !s107 C:/Users/aman/Workspace/240-project/Popcount.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/aman/Workspace/240-project/Popcount.v|
 !s101 -O0
@@ -141,7 +163,7 @@ R4
 R5
 n@popcount
 vPopcount_32bit
-R0
+R10
 !i10b 1
 !s100 K`Ni^Mz<lzn2>lmP]ohWR1
 If9@6B:PKbhYYK5F;Qcz0n2
@@ -155,7 +177,7 @@ R3
 r1
 !s85 0
 31
-R4
+R11
 !s107 C:/Users/aman/Workspace/240-project/Popcount_32bit.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/aman/Workspace/240-project/Popcount_32bit.v|
 !s101 -O0
@@ -163,7 +185,7 @@ R4
 R5
 n@popcount_32bit
 vRotl
-Z10 !s110 1588060570
+R10
 !i10b 1
 !s100 R?ZdSRnU^J?IJnZWJDjOA0
 IH;ab9_;;HORgaTQB347T@2
@@ -177,7 +199,7 @@ R3
 r1
 !s85 0
 31
-R4
+R11
 !s107 C:/Users/aman/Workspace/240-project/Rotl.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/aman/Workspace/240-project/Rotl.v|
 !s101 -O0
@@ -199,7 +221,7 @@ R3
 r1
 !s85 0
 31
-!s108 1588060570.000000
+R11
 !s107 C:/Users/aman/Workspace/240-project/Rotr.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/aman/Workspace/240-project/Rotr.v|
 !s101 -O0

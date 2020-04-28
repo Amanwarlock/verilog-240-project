@@ -4,7 +4,7 @@ module Alu_tb();
 
 parameter DATA_WIDTH = 256;
 
-parameter PARITY = 3'b000, ROTR = 3'b001, ROTL = 3'b010, POPCOUNT = 3'b011;
+parameter PARITY = 3'b000, ROTR = 3'b001, ROTL = 3'b010, POPCOUNT = 3'b011, BITREV = 3'b100; 
 
 reg clk;
 reg [2:0] opcode;
@@ -32,7 +32,8 @@ $monitor($time , " Opcode = %b, A = %b, B = %b, Alu Out = %b, Alu Out = %d",opco
 #5 opcode = POPCOUNT; a_in = 256'b10101101; b_in = 256'b10101101; // Popcount operation,result = 5;
 #5 opcode = POPCOUNT; a_in = 256'b11101101; b_in = 256'b11101101; // Popcount operation,result = 6;  
 #5 opcode = ROTR; a_in = 256'b10101101; b_in = 256'b00000011; // ROTR operation, ShiftBy = 3; 
-#5 opcode = ROTL; a_in = {8'b10101101, {248{1'b0}}}; b_in = 256'b00000011; // ROTL operation
+#5 opcode = ROTL; a_in = {8'b10101101, {248{1'b0}}}; b_in = 256'b00000011; // ROTL operation 
+#5 opcode = BITREV; a_in = 256'b10101101; b_in = 256'b00000000; // BIT REVERSE operation
 #5 $finish;
 
 end
