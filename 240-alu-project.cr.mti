@@ -1,9 +1,23 @@
-C:/Users/aman/Workspace/240-project/Popcount.v {1 {vlog -work work -stats=none C:/Users/aman/Workspace/240-project/Popcount.v
+C:/Users/aman/Workspace/240-project/Alu_tb.v {1 {vlog -work work -stats=none C:/Users/aman/Workspace/240-project/Alu_tb.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module Popcount
+-- Compiling module Alu_tb
 
 Top level modules:
-	Popcount
+	Alu_tb
+
+} {} {}} C:/Users/aman/Workspace/240-project/Mux_256x1.v {1 {vlog -work work -stats=none C:/Users/aman/Workspace/240-project/Mux_256x1.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Mux_256x1
+
+Top level modules:
+	Mux_256x1
+
+} {} {}} C:/Users/aman/Workspace/240-project/Rotr.v {1 {vlog -work work -stats=none C:/Users/aman/Workspace/240-project/Rotr.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Rotr
+
+Top level modules:
+	Rotr
 
 } {} {}} C:/Users/aman/Workspace/240-project/Parity.v {1 {vlog -work work -stats=none C:/Users/aman/Workspace/240-project/Parity.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
@@ -12,19 +26,12 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	Parity
 
-} {} {}} C:/Users/aman/Workspace/240-project/Rotl.v {1 {vlog -work work -stats=none C:/Users/aman/Workspace/240-project/Rotl.v
+} {} {}} C:/Users/aman/Workspace/240-project/Mux_16x1.v {1 {vlog -work work -stats=none C:/Users/aman/Workspace/240-project/Mux_16x1.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module Rotl
+-- Compiling module Mux_16x1
 
 Top level modules:
-	Rotl
-
-} {} {}} C:/Users/aman/Workspace/240-project/Alu_tb.v {1 {vlog -work work -stats=none C:/Users/aman/Workspace/240-project/Alu_tb.v
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module Alu_tb
-
-Top level modules:
-	Alu_tb
+	Mux_16x1
 
 } {} {}} C:/Users/aman/Workspace/240-project/Parity_8bit.v {1 {vlog -work work -stats=none C:/Users/aman/Workspace/240-project/Parity_8bit.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
@@ -33,6 +40,27 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	Parity_8bit
 
+} {} {}} C:/Users/aman/Workspace/240-project/Popcount.v {1 {vlog -work work -stats=none C:/Users/aman/Workspace/240-project/Popcount.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Popcount
+
+Top level modules:
+	Popcount
+
+} {} {}} C:/Users/aman/Workspace/240-project/Rotl.v {1 {vlog -work work -stats=none C:/Users/aman/Workspace/240-project/Rotl.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Rotl
+
+Top level modules:
+	Rotl
+
+} {} {}} C:/Users/aman/Workspace/240-project/Alu.v {1 {vlog -work work -stats=none C:/Users/aman/Workspace/240-project/Alu.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Alu
+
+Top level modules:
+	Alu
+
 } {} {}} C:/Users/aman/Workspace/240-project/Popcount_32bit.v {1 {vlog -work work -stats=none C:/Users/aman/Workspace/240-project/Popcount_32bit.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module Popcount_32bit
@@ -40,11 +68,11 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	Popcount_32bit
 
-} {} {}} C:/Users/aman/Workspace/240-project/Rotr.v {1 {vlog -work work -stats=none C:/Users/aman/Workspace/240-project/Rotr.v
+} {} {}} C:/Users/aman/Workspace/240-project/Bitreverse.v {1 {vlog -work work -stats=none C:/Users/aman/Workspace/240-project/Bitreverse.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module Rotr
+-- Compiling module Bitreverse
 
 Top level modules:
-	Rotr
+	Bitreverse
 
 } {} {}}
