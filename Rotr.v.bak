@@ -1,30 +1,23 @@
-
-`timescale 1ns/1ns
-
 module Rotr #(
-	parameter DATA_WIDTH = 256
+	parameter DATA_WIDTH = 1024
 )(
 	input clk,
 	input enable,
-	input [DATA_WIDTH-1:0] a_in,
-	input [DATA_WIDTH-1:0] shift_in, // consider only 8-bits
-	output [DATA_WIDTH-1:0] a_out
+	input [DATA_WIDTH-1:0] a,
+	input [DATA_WIDTH-1:0] shift_mag,
+	output [DATA_WIDTH-1:0] out
 );
 
-genvar i;
+reg enable_reg;
+reg [DATA_WIDTH-1:0] a_reg, shift_mag_reg;
 
-assign a_out = a_in >> shift_in;
-  
-/*
-  Mux_256x1  mux_1(.clk(clk), .sel(shift_in[7:0]), .a(a_in), .out(a_out[0]));
-  Mux_256x1  mux_2(.clk(clk), .sel(shift_in[7:0]), .a({a_in[0], a_in[DATA_WIDTH-1: 1]}), .out(a_out[1]));
-
-generate for (i = 2; i < DATA_WIDTH; i = i + 1 ) begin: loop
-
-	Mux_256x1 mux_3(.clk(clk), .sel(shift_in[7:0]), .a({a_in[i-1: 0], a_in[DATA_WIDTH-1:i]}), .out(a_out[i]));
-
+always @(posedge clk) begin
+	enable_reg <= enable;
+	a_reg <= a;
+	shift_mag_reg <= shift_mag;
 end
-endgenerate
-*/
+
+assign out = a_reg >> 
+
 
 endmodule

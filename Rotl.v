@@ -1,4 +1,4 @@
-module Rotr #(
+module Rotl #(
 	parameter DATA_WIDTH = 1024
 )(
 	input clk,

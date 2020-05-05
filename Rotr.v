@@ -17,7 +17,7 @@ always @(posedge clk) begin
 	shift_mag_reg <= shift_mag;
 end
 
-assign out = a_reg << shift_mag_reg;
+assign out = a_reg >> shift_mag_reg;
 
 
 endmodule

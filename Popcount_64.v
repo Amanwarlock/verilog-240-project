@@ -2,7 +2,7 @@ module Popcount_64(
 	input clk,
 	input enable,
 	input [63:0] a,
-	output[63:0] out
+	output reg[63:0] out
 );
 
 reg [63:0] a_reg;
@@ -28,6 +28,9 @@ always @(posedge clk) begin
 	end
 end
 
-assign out = t[0] + t[1] + t[2] + t[3] + t[4] + t[5] + t[6] + t[7];
+always @(posedge clk) begin
+	out <= t[0] + t[1] + t[2] + t[3] + t[4] + t[5] + t[6] + t[7];
+end
+//assign out = t[0] + t[1] + t[2] + t[3] + t[4] + t[5] + t[6] + t[7];
 
 endmodule
