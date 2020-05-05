@@ -5,7 +5,7 @@
 	256-bits
 */
 module Parity #(
-	parameter DATA_WIDTH = 256
+	parameter DATA_WIDTH = 1024
 )(
 	input clk,
 	input enable,
@@ -15,27 +15,33 @@ module Parity #(
 
 genvar i;
 
-wire [31:0] w_32,w_64,w_96,w_128,w_160,w_192,w_224,w_256;
+reg [DATA_WIDTH-1: 0] p_in_reg;
 
-generate for( i = 0; i < DATA_WIDTH; i = i + 32)
-	begin : loop
-		wire [7:0] t1,t2,t3,t4;
-		Parity_8bit inst1(.clk(clk),.enable(enable), .a(p_in[i+7:i]), .out(t1));
-		Parity_8bit inst2(.clk(clk),.enable(enable), .a(p_in[i+15:i+8]), .out(t2));
-		Parity_8bit inst3(.clk(clk), .enable(enable), .a(p_in[i+23:i+16]), .out(t3));
-		Parity_8bit inst4(.clk(clk), .enable(enable), .a(p_in[i+31:i+24]), .out(t4));
-		
-		if(i == 0) assign w_32 = t1 ^ t2 ^ t3 ^ t4; // 32-bits
-		if(i == 32) assign w_64 = t1 ^ t2 ^ t3 ^ t4; // 32-bits
-		if(i == 64) assign w_96 = t1 ^ t2 ^ t3 ^ t4; // 32-bits
-		if(i == 96) assign w_128 = t1 ^ t2 ^ t3 ^ t4; // 32-bits
-		if(i == 128) assign w_160 = t1 ^ t2 ^ t3 ^ t4; // 32-bits
-		if(i == 160) assign w_192 = t1 ^ t2 ^ t3 ^ t4; // 32-bits
-		if(i == 192) assign w_224 = t1 ^ t2 ^ t3 ^ t4; // 32-bits
-		if(i == 224) assign w_256 = t1 ^ t2 ^ t3 ^ t4; // 32-bits
-	end
-endgenerate
+wire [63:0] w [0:15];
 
-assign p_out = w_32 ^ w_64 ^ w_96 ^ w_128 ^ w_160 ^ w_192 ^ w_224 ^ w_256;
+always @(posedge clk) begin
+	p_in_reg <= #1 p_in;
+end
+
+
+Parity_64 pa_1(.clk(clk), .enable(enable), .a(p_in_reg[63:0]), .out(w[0]));
+Parity_64 pa_2(.clk(clk), .enable(enable), .a(p_in_reg[127:64]), .out(w[1]));
+Parity_64 pa_3(.clk(clk), .enable(enable), .a(p_in_reg[191:128]), .out(w[2]));
+Parity_64 pa_4(.clk(clk), .enable(enable), .a(p_in_reg[255:192]), .out(w[3]));
+Parity_64 pa_5(.clk(clk), .enable(enable), .a(p_in_reg[319:256]), .out(w[4]));
+Parity_64 pa_6(.clk(clk), .enable(enable), .a(p_in_reg[383:320]), .out(w[5]));
+Parity_64 pa_7(.clk(clk), .enable(enable), .a(p_in_reg[447:384]), .out(w[6]));
+Parity_64 pa_8(.clk(clk), .enable(enable), .a(p_in_reg[511:448]), .out(w[7]));
+Parity_64 pa_9(.clk(clk), .enable(enable), .a(p_in_reg[575:512]), .out(w[8]));
+Parity_64 pa_10(.clk(clk), .enable(enable), .a(p_in_reg[639:576]), .out(w[9]));
+Parity_64 pa_11(.clk(clk), .enable(enable), .a(p_in_reg[703:640]), .out(w[10]));
+Parity_64 pa_12(.clk(clk), .enable(enable), .a(p_in_reg[767:704]), .out(w[11]));
+Parity_64 pa_13(.clk(clk), .enable(enable), .a(p_in_reg[831:768]), .out(w[12]));
+Parity_64 pa_14(.clk(clk), .enable(enable), .a(p_in_reg[895:832]), .out(w[13]));
+Parity_64 pa_15(.clk(clk), .enable(enable), .a(p_in_reg[959:896]), .out(w[14]));
+Parity_64 pa_16(.clk(clk), .enable(enable), .a(p_in_reg[1023:960]), .out(w[15]));
+
+
+assign p_out = w[0] ^ w[1];
 
 endmodule

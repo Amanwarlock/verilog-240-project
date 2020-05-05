@@ -27,6 +27,6 @@ Mux_16x1 mux14(.clk(clk), .sel(sel[3:0]), .a(a[223:208]), .out(w[13]));
 Mux_16x1 mux15(.clk(clk), .sel(sel[3:0]), .a(a[239:224]), .out(w[14]));
 Mux_16x1 mux16(.clk(clk), .sel(sel[3:0]), .a(a[255:240]), .out(w[15]));
 
-Mux_16x1 mux17(.clk(clk), .sel(sel[7:4]), .a(w), .out(out);
+Mux_16x1 mux17(.clk(clk), .sel(sel[7:4]), .a(w), .out(out));
 
 endmodule
