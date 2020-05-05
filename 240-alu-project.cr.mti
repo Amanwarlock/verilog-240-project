@@ -1,4 +1,18 @@
-C:/Users/aman/Workspace/240-project/Parity_64.v {1 {vlog -work work -stats=none C:/Users/aman/Workspace/240-project/Parity_64.v
+C:/Users/aman/Workspace/240-project/Popcount.v {1 {vlog -work work -stats=none C:/Users/aman/Workspace/240-project/Popcount.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Popcount
+
+Top level modules:
+	Popcount
+
+} {} {}} C:/Users/aman/Workspace/240-project/Popcount_64.v {1 {vlog -work work -stats=none C:/Users/aman/Workspace/240-project/Popcount_64.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Popcount_64
+
+Top level modules:
+	Popcount_64
+
+} {} {}} C:/Users/aman/Workspace/240-project/Parity_64.v {1 {vlog -work work -stats=none C:/Users/aman/Workspace/240-project/Parity_64.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module Parity_64
 
@@ -18,12 +32,5 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 
 Top level modules:
 	Mux
-
-} {} {}} C:/Users/aman/Workspace/240-project/Alu_tb.v {1 {vlog -work work -stats=none C:/Users/aman/Workspace/240-project/Alu_tb.v
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module Alu_tb
-
-Top level modules:
-	Alu_tb
 
 } {} {}}

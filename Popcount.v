@@ -35,4 +35,7 @@ Popcount_64 pop_15(.clk(clk), .enable(enable), .a(pop_in_reg[959:896]), .out(t[1
 Popcount_64 pop_16(.clk(clk), .enable(enable), .a(pop_in_reg[1023:960]), .out(t[15]));
 
 
+assign pop_out = t[0] + t[1] + t[2] + t[3] + t[4] + t[5] + t[6] + t[7] + 
+		 t[8] + t[9] + t[10] + t[11] + t[12] + t[13] + t[14] + t[15];
+
 endmodule

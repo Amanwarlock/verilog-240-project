@@ -48,6 +48,8 @@ end
 
 Parity #(.DATA_WIDTH(DATA_WIDTH)) parity_module(.clk(clk), .enable(parity_enable), .p_in(parity_in), .p_out(parity_out));
 
+Popcount #(.DATA_WIDTH(DATA_WIDTH)) popcount_module(.clk(clk), .enable(popcount_enable), .pop_in(popcount_in), .pop_out(popcount_out));
+
 Mux #(.DATA_WIDTH(DATA_WIDTH)) mux_module(.clk(clk), .opcode(opcode), .parity_out(parity_out), .popcount_out(popcount_out), .alu_out(Alu_out));
 
 endmodule
