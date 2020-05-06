@@ -1,3 +1,4 @@
+`timescale 1ns/1ns
 module Mux #(
 	parameter DATA_WIDTH = 1024
 )(
@@ -17,11 +18,11 @@ parameter PARITY = 3'b000, //0
 
 always @(posedge clk) begin
 	case(opcode) 
-		PARITY: alu_out <= #5 parity_out;
-		POPCOUNT: alu_out <= #5 popcount_out;
-		ROTR: alu_out <= #5 rotr_out;
-		ROTL: alu_out <= #5 rotl_out;
-		default: alu_out <= #5 0;
+		PARITY: alu_out =  parity_out;
+		POPCOUNT: alu_out = popcount_out;
+		ROTR: alu_out =  rotr_out;
+		ROTL: alu_out = rotl_out;
+		default: alu_out = 0;
 	endcase
 end
 

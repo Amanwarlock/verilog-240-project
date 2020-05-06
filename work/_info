@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/Users/aman/Workspace/Verilog/Risc_BMI_ALU
 vAlu
-Z0 !s110 1588644045
+Z0 !s110 1588646293
 !i10b 1
 !s100 ai_G@EGSUARdUN_N=CXYF3
 IjLIaG;WSPj6Wfzf9;WZ[o3
@@ -23,7 +23,7 @@ Z3 OP;L;10.4a;61
 r1
 !s85 0
 31
-Z4 !s108 1588644045.000000
+Z4 !s108 1588646293.000000
 !s107 C:/Users/aman/Workspace/240-project/Alu.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/aman/Workspace/240-project/Alu.v|
 !s101 -O0
@@ -99,11 +99,11 @@ n@bitreverse
 vMux
 R0
 !i10b 1
-!s100 <@m9SO0^84BAmH8A]E[9G1
-IniD6=7a^7h?a^H=QiEk7J3
+!s100 =fiij_OQOC^QYJ4hVT16P0
+I0CDjEYDPgDIOWWF?;C]eJ2
 R1
 R2
-w1588643134
+w1588646291
 8C:/Users/aman/Workspace/240-project/Mux.v
 FC:/Users/aman/Workspace/240-project/Mux.v
 L0 2
@@ -295,7 +295,7 @@ r1
 R5
 n@popcount_32bit
 vPopcount_64
-R0
+Z12 !s110 1588646294
 !i10b 1
 !s100 U<;]XFF3W3Q7Z^]PNFNY]2
 I8fz_XNJAjfo8Zl`o;ZH7`1
@@ -309,7 +309,7 @@ R3
 r1
 !s85 0
 31
-R4
+Z13 !s108 1588646294.000000
 !s107 C:/Users/aman/Workspace/240-project/Popcount_64.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/aman/Workspace/240-project/Popcount_64.v|
 !s101 -O0
@@ -317,7 +317,7 @@ R4
 R5
 n@popcount_64
 vRotl
-Z12 !s110 1588644046
+R12
 !i10b 1
 !s100 fFHi;^YUR5dNVo7LBfV:W1
 IIl3D3N:C:ULLINZDOLnIf0
@@ -331,7 +331,7 @@ R3
 r1
 !s85 0
 31
-Z13 !s108 1588644046.000000
+R13
 !s107 C:/Users/aman/Workspace/240-project/Rotl.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/aman/Workspace/240-project/Rotl.v|
 !s101 -O0
