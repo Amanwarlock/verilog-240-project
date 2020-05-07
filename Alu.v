@@ -4,7 +4,7 @@
 	256-bits
 */
 module Alu #(
-	parameter DATA_WIDTH = 1024
+	parameter DATA_WIDTH = 512
 )(
 	input clk,
 	input [2:0] opcode,

@@ -1,5 +1,5 @@
 module Rotr #(
-	parameter DATA_WIDTH = 1024
+	parameter DATA_WIDTH = 512
 )(
 	input clk,
 	input enable,

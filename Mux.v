@@ -1,6 +1,6 @@
 `timescale 1ns/1ns
 module Mux #(
-	parameter DATA_WIDTH = 1024
+	parameter DATA_WIDTH = 512
 )(
 	input clk,
 	input [2:0] opcode,
@@ -32,13 +32,13 @@ always @(posedge clk) begin
 	rotl_out_reg <= rotl_out;
 end
 
-always @(posedge clk) begin
+always @(negedge clk) begin
 	case(op_reg)
 		PARITY: result_reg <= parity_out_reg;
 		POPCOUNT: result_reg <= popcount_out_reg;
 		ROTR: result_reg <= rotr_out_reg;
 		ROTL: result_reg <= rotl_out_reg;
-		default: result_reg <= 1024'hx;
+		default: result_reg <= 512'b0;
 	endcase
 end
 
