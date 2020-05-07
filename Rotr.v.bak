@@ -9,7 +9,7 @@ module Rotr #(
 );
 
 reg enable_reg;
-reg [DATA_WIDTH-1:0] a_reg, shift_mag_reg;
+reg [DATA_WIDTH-1:0] a_reg, out_reg,t,shift_mag_reg;
 
 always @(posedge clk) begin
 	enable_reg <= enable;
@@ -17,7 +17,9 @@ always @(posedge clk) begin
 	shift_mag_reg <= shift_mag;
 end
 
-assign out = a_reg >> 
+always @(posedge clk) 
+	 {out_reg,t} = a_reg >> shift_mag_reg;
 
+assign out = out_reg;
 
 endmodule

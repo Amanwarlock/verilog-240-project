@@ -7,14 +7,15 @@ module Parity_64(
 
 reg enable_reg;
 reg [63:0] a_in_reg;
-reg [1:0] t [0:31];
+reg [63:0] out_reg;
+reg [31:0] t;
 
-always @(posedge clk) begin
+always @(posedge clk) begin		/* PIPELINE STAGE-1 */
 	a_in_reg <= a;
 	enable_reg <= enable;
 end
 
-always @(posedge clk) begin
+always @(posedge clk) begin				/* PIPELINE STAGE-2 */
 	if(enable_reg == 1'b1) begin
 		t[0] <= a_in_reg[0] ^ a_in_reg[1];
 		t[1] <= a_in_reg[2] ^ a_in_reg[3];
@@ -51,9 +52,14 @@ always @(posedge clk) begin
 	end
 end
 
-assign out =  	t[0] ^ t[1] ^ t[2] ^ t[3] ^ t[4] ^ t[5] ^ t[6] ^ t[7] ^ t[8] ^
-		t[9] ^ t[10] ^ t[11] ^ t[12] ^ t[13] ^ t[14] ^ t[15] ^ t[16] ^
-		t[17] ^ t[18] ^ t[19] ^ t[20] ^ t[21] ^ t[22] ^ t[23] ^ t[24] ^
-		t[25] ^ t[26] ^ t[27] ^ t[28] ^ t[29] ^ t[30] ^ t[31]; 
+always @(posedge clk) begin 									/* PIPELINE STAGE-3 */
+	out_reg <= t[0] ^ t[1] ^ t[2] ^ t[3] ^ t[4] ^ t[5] ^ t[6] ^ t[7] ^ t[8] ^
+			t[9] ^ t[10] ^ t[11] ^ t[12] ^ t[13] ^ t[14] ^ t[15] ^ t[16] ^
+			t[17] ^ t[18] ^ t[19] ^ t[20] ^ t[21] ^ t[22] ^ t[23] ^ t[24] ^
+			t[25] ^ t[26] ^ t[27] ^ t[28] ^ t[29] ^ t[30] ^ t[31]; 
+
+end
+
+assign out =  out_reg;
 
 endmodule

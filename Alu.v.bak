@@ -18,6 +18,8 @@ parameter PARITY = 3'b000, //0
 	  ROTR = 3'b010, //2
 	  ROTL = 3'b011; // 3 
 
+reg [2:0] opcode_reg;
+
 reg [DATA_WIDTH-1: 0]	parity_in,
 			popcount_in,
 			rotr_in,
@@ -29,15 +31,17 @@ reg	parity_enable,
 	rotr_enable,
 	rotl_enable;
 
-
 wire [DATA_WIDTH-1: 0]	parity_out,
 			popcount_out,
 			rotr_out,
 			rotl_out;
 
-always @(posedge clk) begin
-	
-	case (opcode)
+always @(poseedge clk) begin
+	opcode_reg <= opcode;
+end
+
+always @(posedge clk) begin				/*	PIPELINE STAGE-1  	*/
+	case (opcode_reg)
 		PARITY: begin
 			parity_enable <= #1 1'b1;
 			parity_in <= #1 A_in;
